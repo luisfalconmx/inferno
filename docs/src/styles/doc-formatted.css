@@ -1,0 +1,85 @@
+.doc-formatted {
+  @apply mb-12 overflow-hidden text-wrap break-words;
+}
+
+.doc-formatted p {
+  @apply pb-5 text-neutral-300 text-lg;
+}
+
+.doc-formatted h1,
+.doc-formatted h2,
+.doc-formatted h3,
+.doc-formatted h4,
+.doc-formatted h5,
+.doc-formatted h6 {
+  @apply pb-6 pt-12 text-2xl font-bold;
+}
+
+.doc-formatted h1 {
+  @apply text-4xl;
+}
+
+.doc-formatted h2 {
+  @apply text-2xl;
+}
+
+.doc-formatted ul {
+  @apply list-disc pb-8 ps-4 text-neutral-300 md:ps-12;
+}
+
+.doc-formatted ul p {
+  @apply pb-2;
+}
+
+.doc-formatted ul li {
+  @apply text-lg;
+}
+
+.doc-formatted img {
+  @apply mb-8 ml-0 h-full;
+}
+
+.doc-formatted a {
+  @apply font-semibold underline;
+}
+
+.doc-formatted hr {
+  @apply mb-5 block;
+}
+
+.doc-formatted code {
+  @apply !bg-neutral-900 text-white p-1 px-3 rounded text-lg;
+}
+
+.doc-formatted pre {
+  @apply !mb-8 !mt-2 block w-full max-w-[360px] rounded overflow-x-auto  border-neutral-500 text-base text-white md:max-w-[560px] lg:max-w-screen-xl lg:text-lg shadow-xl;
+}
+
+.doc-formatted div pre + div {
+  @apply !hidden;
+}
+
+.doc-formatted blockquote {
+  @apply mb-8 flex flex-col justify-center gap-6 border-l-8 border-primary py-6 pl-6 bg-primary/20;
+}
+
+.doc-formatted blockquote p {
+  @apply p-0;
+}
+
+.doc-formatted table {
+  @apply mb-8 w-full table-auto bg-primary/20  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-gray-100;
+}
+
+.doc-formatted table th {
+  @apply bg-neutral-900 border border-neutral-700 text-white font-semibold;
+}
+
+.doc-formatted table th,
+.doc-formatted table td {
+  @apply border border-primary/40 py-2 px-4;
+}
+
+.doc-formatted table thead tr th {
+  @apply border-neutral-900;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "@andromeda-ds/vue-components",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.x"
+  },
+  "scripts": {
+    "dev": "storybook dev -p 6006 --no-open",
+    "build": "vue-tsc -b && vite build",
+    "build-storybook": "storybook build",
+    "preview": "vite preview",
+    "deploy": "npm run build && npm publish"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.6"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^2.0.2",
+    "@storybook/addon-a11y": "^8.3.1",
+    "@storybook/addon-designs": "^8.0.3",
+    "@storybook/addon-essentials": "^8.3.1",
+    "@storybook/addon-interactions": "^8.3.1",
+    "@storybook/addon-links": "^8.3.1",
+    "@storybook/addon-onboarding": "^8.3.1",
+    "@storybook/blocks": "^8.3.1",
+    "@storybook/test": "^8.3.1",
+    "@storybook/vue3": "^8.3.1",
+    "@storybook/vue3-vite": "^8.3.1",
+    "@types/node": "^22.5.4",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "clsx": "^2.1.1",
+    "glob": "^11.0.0",
+    "postcss-load-config": "^6.0.1",
+    "postcss-nested": "^6.2.0",
+    "storybook": "^8.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vue": "^3.5.6",
+    "vue-tsc": "^2.0.29"
+  }
+}
