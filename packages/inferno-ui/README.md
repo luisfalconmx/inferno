@@ -1,13 +1,13 @@
-# @andromeda-ds/react-components
+# @luisfalconmx/inferno-ui
 
-Library of components developed in React for the Andromeda Design System.
+Library of components developed in React
 
 ## Installation
 
 Install this library with the next command
 
 ```
-npm install @andromeda-ds/react-components
+npm install @luisfalconmx/inferno-ui
 ```
 
 Next, import the compiled styles into your `main.tsx` file
@@ -18,7 +18,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css"; // import first
-import "@andromeda/react-components/dist/style.css"; // import at the end
+import "@luisfalconmx/inferno-ui/dist/style.css"; // import at the end
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -30,7 +30,7 @@ createRoot(document.getElementById("root")!).render(
 Now you can import any component from the library. Example:
 
 ```ts
-import { Button } from "@andromeda/react-components";
+import { Button } from "@luisfalconmx/inferno-ui";
 
 function App() {
   return (
@@ -41,5 +41,4 @@ function App() {
 }
 
 export default App;
-
 ```

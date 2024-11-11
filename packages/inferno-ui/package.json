@@ -1,6 +1,6 @@
 {
-  "name": "@andromeda-ds/vue-components",
-  "version": "0.1.0",
+  "name": "@luisfalconmx/inferno-ui",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
@@ -12,16 +12,19 @@
   },
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
-    "build": "vue-tsc -b && vite build",
-    "build-storybook": "storybook build",
+    "build": "tsc -b && vite build",
+    "build:storybook": "storybook build",
+    "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && npm publish"
   },
   "peerDependencies": {
-    "vue": "^3.5.6"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^2.0.2",
+    "@eslint/js": "^9.9.0",
     "@storybook/addon-a11y": "^8.3.1",
     "@storybook/addon-designs": "^8.0.3",
     "@storybook/addon-essentials": "^8.3.1",
@@ -29,21 +32,33 @@
     "@storybook/addon-links": "^8.3.1",
     "@storybook/addon-onboarding": "^8.3.1",
     "@storybook/blocks": "^8.3.1",
+    "@storybook/react": "^8.3.1",
+    "@storybook/react-vite": "^8.3.1",
     "@storybook/test": "^8.3.1",
-    "@storybook/vue3": "^8.3.1",
-    "@storybook/vue3-vite": "^8.3.1",
     "@types/node": "^22.5.4",
-    "@vitejs/plugin-vue": "^5.1.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-storybook": "^0.8.0",
     "glob": "^11.0.0",
-    "postcss-load-config": "^6.0.1",
-    "postcss-nested": "^6.2.0",
+    "globals": "^15.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "storybook": "^8.3.1",
     "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
     "vite-plugin-dts": "^4.2.1",
-    "vite-plugin-lib-inject-css": "^2.1.1",
-    "vue": "^3.5.6",
-    "vue-tsc": "^2.0.29"
+    "vite-plugin-lib-inject-css": "^2.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }

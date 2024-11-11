@@ -19,8 +19,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/main.ts"),
-      name: "andromeda",
-      fileName: "andromeda",
+      name: "inferno",
+      fileName: "inferno",
       formats: ["es"],
     },
     rollupOptions: {
